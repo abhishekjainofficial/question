@@ -1,14 +1,25 @@
 #include<stdio.h>
+int s;
+int sum(int);
 int main()
 {
-	int a,b,c;
-	int sum=0;
+	int a;
 	scanf("%d",&a);
-	for(b=0;a>=0;b++)
-	{
-		c=a%10;
-		sum = sum + c;
-		a=a/10;
-	}
-	printf("%d",sum);
+	printf("%d",sum(a));
 }
+int sum(int a)
+{int c;
+if(a==0)
+{
+return ;}
+else
+{
+c=a%10;
+s=s+c;
+a=a/10;
+sum(a);
+return s;
+}
+}
+
+
